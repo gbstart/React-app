@@ -1,8 +1,8 @@
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { CountryCard } from './CountryCard';
-import { fetchCountries, loadMore } from '../app/store';
 import { Row, Col, Button, Alert } from 'react-bootstrap';
+import { fetchCountries, loadMore } from '../app/countrySlice/countrySlice';
 
 export const CountryList = () => {
   const dispatch = useDispatch();

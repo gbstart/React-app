@@ -2,11 +2,11 @@
 import { useForm } from 'react-hook-form';
 import { yupResolver } from '@hookform/resolvers/yup';
 import { useDispatch } from 'react-redux';
-import { login } from '../app/store';
 import { Row, Col, Form, Button } from 'react-bootstrap';
 import { FaGoogle, FaFacebookF, FaLinkedinIn, FaTwitter } from 'react-icons/fa';
 import SocialIcon from '../components/SocialIcon';
 import { loginValidationSchema } from '../validation/loginValidationSchema';
+import { login } from '../app/authSlice/authSlice';
 
 
 
