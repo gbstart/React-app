@@ -1,8 +1,8 @@
 import { Routes, Route, Navigate } from "react-router-dom";
 import { useSelector } from "react-redux";
-import { LoginPage } from "../Login";
-import WelcomePage from "../WelcomePage";
-import Footer from "../../components/Footer"
+import { LoginPage } from "../pages/Login";
+import Footer from "../components/Footer"
+import WelcomePage from "../pages/WelcomePage";
 const Router = () => {
   const isLoggedIn = useSelector((state) => state.auth.isLoggedIn);
 

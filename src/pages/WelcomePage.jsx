@@ -15,8 +15,6 @@ const WelcomePage = () => {
           <Col xs={6} sm={6}>
             <h5><strong>Countries</strong></h5>
           </Col>
-
-          {/* Mobile Menu Toggle */}
           <Col xs={6} sm={6} className="text-end d-md-none">
             <Button
               variant="outline-secondary"
@@ -34,8 +32,6 @@ const WelcomePage = () => {
             </Nav>
           </Col>
         </Row>
-
-       {/* Mobile Dropdown Menu */}
         <Collapse in={menuOpen}>
           <div>
             <Nav className="flex-column mt-3 gap-2 d-md-none">
@@ -46,11 +42,36 @@ const WelcomePage = () => {
           </div>
         </Collapse>
 
-        <Row className="align-items-center justify-content-center mt-4 text-center">
-          <Col xs={4}><hr className="border-secondary" /></Col>
-          <Col xs="auto"><h2 className="fw-bold text-secondary m-0">WELCOME</h2></Col>
-          <Col xs={4}><hr className="border-secondary" /></Col>
-        </Row>
+        <div style={{
+          display: 'flex',
+          alignItems: 'center',
+          justifyContent: 'center',
+          marginTop: 20,
+          gap: 20
+        }}>
+          <hr style={{
+            flex: 1,
+            height: 1,
+            backgroundColor: '#444',
+            border: 'none',
+            marginTop: -4
+          }} />
+          <h2 style={{
+            fontWeight: 'bold',
+            fontSize: 28,
+            color: '#444',
+            margin: 0
+          }}>
+            WELCOME
+          </h2>
+          <hr style={{
+            flex: 1,
+            height: 1,
+            backgroundColor: '#444',
+            border: 'none',
+            marginBottom: -4
+          }} />
+        </div>
       </Container>
       <Slider />
       <CountryList />
